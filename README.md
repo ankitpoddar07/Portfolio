@@ -1,12 +1,50 @@
-# Project "(Portfolio Website)" 
-## Live Preview : [Open Link](https://ankit-portfolio07.netlify.app/)
-* Technologies Used : HTML, CSS, JavaScript
-> Developed a responsive portfolio website to showcase projects, skills, and contact information.
-> Implemented dynamic features using JavaScript (app.js) and styled the site with custom CSS (style.css).
-* Organized project files into a clear directory structure for easy maintenance and scalability.
-* Hosted the project on GitHub with a detailed README.md and an open-source license.
+# 🚀 Project :- "(Portfolio Website)" 
+## 🌐 Live Preview  
+🔗 **[Open Link](https://ankit-portfolio07.netlify.app/)**
+---
+## 🛠 Technologies Used  
+- **HTML** – Structured the website.
+- **CSS** – Designed a responsive and modern UI.
+- **JavaScript** – Implemented interactive features (`app.js`).
 
-## Watch The Complete Tutorial ![YouTube Video Views](https://img.shields.io/youtube/views/78l05_nuDIg?style=social) : [Playlist](https://www.youtube.com/playlist?list=PLRv_Gd5w9e7m_6DqBDtb1gbG6ikBq2HJ3)
+---
+
+## 📌 Project Overview  
+A fully responsive **portfolio website** built to showcase my projects, skills, and contact details.
+
+### ✨ Features:  
+✔️ Clean, modern, and responsive design.  
+✔️ **JavaScript-powered** dynamic interactions.  
+✔️ Well-structured **directory organization** for scalability.  
+✔️ Hosted on **GitHub** with a detailed `README.md` and an open-source license.
+
+---
+
+## 📂 Project Structure  
+```
+📁 Portfolio-Website
+│── 📁 assets          # Images, icons, and fonts
+│── 📁 css             # Stylesheets
+│    └── style.css    # Main CSS file
+│── 📁 js              # JavaScript files
+│    └── app.js       # Main JavaScript file
+│── 📄 index.html      # Main HTML file
+│── 📄 README.md       # Project documentation
+│── 📄 LICENSE         # Open-source license
+```
+
+---
+
+## 📬 Contact Me  
+📧 **Email:** ankitkumarpoddar07@gmail.com  
+💼 **LinkedIn:** [https://www.linkedin.com/in/ankit-kumar-271a3730b/ ](https://www.linkedin.com/in/yourprofile)  
+🐦 **Twitter:** [https://x.com/ankitpo47153377](https://twitter.com/yourhandle)  
+
+---
+
+💡 **Feel free to fork this repository, contribute, or reach out for collaboration!** 😊
+
+
 
 
 
