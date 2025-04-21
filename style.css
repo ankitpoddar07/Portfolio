@@ -86,7 +86,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 15rem;
 }
 
 .primary-btn {
@@ -676,7 +676,7 @@ p {
 }
 
 
-/* About section  */
+/* About Section */
 
 #about {
     padding: 15rem 0;
@@ -684,73 +684,151 @@ p {
 
 #about .wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap: 3rem;
+    align-items: flex-start;
 }
 
+
+/* Left Column - Profile Card */
+
 #about .left {
+    flex: 1;
+    min-width: 300px;
+}
+
+#about .card {
+    background: white;
     padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-#about .left .card {
-    box-shadow: 0px 0px 20px #4705fc33;
-    padding: 3rem;
-    border-radius: 12px;
-    min-height: 400px;
-}
-
-#about .left .card .img {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
+#about .img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
 }
 
-#about .left .card .img img {
+#about .img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-#about .left .card .card-desc {
+#about .card-desc {
+    margin-bottom: 1.5rem;
     color: var(--secondary-gray);
+}
+
+#about .card-name {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat';
+}
+
+#about .card-sub-title {
+    color: var(--primary-color);
+    font-size: 1.6rem;
     margin-bottom: 2rem;
 }
 
-#about .left .card .card-name {
-    font-size: 2rem;
-    margin-bottom: 0.2rem;
-}
 
-#about .left .card .card-sub-title {
-    font-size: 1.4rem;
+/* Right Column - Skills */
+
+#about .right {
+    flex: 2;
 }
 
 #about .subheading {
     color: var(--primary-color);
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-#about .right .slogan {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+#about .slogan {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat';
 }
 
-#about .right .right-text {
+#about .right-text {
     color: var(--secondary-gray);
+    margin-bottom: 3rem;
+    max-width: 600px;
 }
+
+
+/* Skills Grid */
+
+#about .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#about .skill {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(89, 36, 237, 0.1);
+}
+
+#about .skill i,
+#about .skill img {
+    font-size: 2.8rem;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+#about .skill img {
+    filter: none;
+    object-fit: contain;
+}
+
+#about .skill p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--secondary-gray);
+    font-weight: 500;
+}
+
+
+/* Buttons */
+
+#about .buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+
+/* Responsive */
 
 @media only screen and (max-width: 768px) {
     #about .wrapper {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    #about .right .buttons {
         flex-direction: column;
     }
-    #about .right .buttons a {
+    #about .skills {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    #about .buttons {
+        flex-direction: column;
+    }
+    #about .buttons a {
         width: 100%;
         text-align: center;
     }
@@ -1181,4 +1259,411 @@ p {
     #copyright p {
         text-align: center;
     }
+}
+
+
+/* Butterflies */
+
+.butterflies {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.butterfly {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: float 10s infinite ease-in-out;
+}
+
+.butterfly img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.butterfly-1 {
+    top: 20%;
+    left: 10%;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+.butterfly-2 {
+    top: 50%;
+    left: 30%;
+    animation-duration: 15s;
+    animation-delay: 0s;
+}
+
+.butterfly-3 {
+    top: 80%;
+    left: 50%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(200px, 150px) rotate(90deg);
+    }
+    50% {
+        transform: translate(400px, 50px) rotate(180deg);
+    }
+    75% {
+        transform: translate(600px, 200px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+
+/* Skills Section Styles */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(89, 36, 237, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(89, 36, 237, 0.2);
+}
+
+.skill i,
+.skill img {
+    font-size: 3.2rem;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.skill img {
+    filter: none;
+    object-fit: contain;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--secondary-gray);
+    font-weight: 500;
+}
+
+
+/* Adjustments for specific sections */
+
+#about .skills {
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills {
+        justify-content: center;
+    }
+    .skill {
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+    }
+    .skill i,
+    .skill img {
+        font-size: 2.8rem;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+/* Base font size adjustment for different screens */
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 9.5px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 8.5px;
+    }
+    .container {
+        width: 95%;
+    }
+    section {
+        padding: 8rem 0;
+    }
+    .section-heading {
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+
+/* Navigation adjustments */
+
+@media only screen and (max-width: 576px) {
+    #navigation {
+        right: 15px;
+        top: 15px;
+    }
+    #navigation .nav-icon {
+        width: 45px;
+        height: 45px;
+    }
+    #nav-content {
+        width: 100%;
+    }
+    #nav-content nav ul li a {
+        font-size: 2rem;
+    }
+}
+
+
+/* Hero section responsive adjustments */
+
+@media only screen and (max-width: 992px) {
+    #hero {
+        padding-top: 8rem;
+    }
+    #hero .left .heading {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #hero {
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    #hero .left .heading {
+        font-size: 4.5rem;
+    }
+    #hero .right img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #hero .left .heading {
+        font-size: 3.8rem;
+    }
+    #hero .left .desc {
+        max-width: 100%;
+    }
+    .buttons {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .buttons .primary-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* About section responsive improvements */
+
+@media only screen and (max-width: 992px) {
+    #about .wrapper {
+        gap: 2rem;
+    }
+    #about .img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about .skills {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 1rem;
+    }
+    #about .skill {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #about .skills {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+    #about .skill i,
+    #about .skill img {
+        font-size: 2.4rem;
+        width: 24px;
+        height: 24px;
+    }
+    #about .skill p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Projects section responsive fixes */
+
+@media only screen and (max-width: 992px) {
+    #projects .item {
+        flex-direction: column;
+    }
+    #projects .item .left,
+    #projects .item .right {
+        flex: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    #projects .item .right {
+        margin-top: -100px;
+        padding: 3rem 2rem;
+    }
+    #projects .item .left .img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #projects .item .left .img {
+        height: 300px;
+    }
+    #projects .item .right {
+        margin-top: -80px;
+        padding: 2rem 1.5rem;
+    }
+    #projects .item .right .project-title {
+        font-size: 2rem;
+    }
+}
+
+
+/* Contact section responsive improvements */
+
+@media only screen and (max-width: 992px) {
+    #contact .wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #contact .wrapper .left,
+    #contact .wrapper .right {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    #contact .right .form-wrapper {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact .left .contact-info ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+    #contact .right .form-wrapper {
+        padding: 2rem;
+    }
+}
+
+
+/* Footer responsive adjustments */
+
+@media only screen and (max-width: 992px) {
+    #footer footer {
+        flex-wrap: wrap;
+    }
+    #footer footer .col-1,
+    #footer footer .col-2,
+    #footer footer .col-3,
+    #footer footer .col-4 {
+        flex: 1 1 50%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #footer footer .col-1,
+    #footer footer .col-2,
+    #footer footer .col-3,
+    #footer footer .col-4 {
+        flex: 1 1 100%;
+    }
+    #footer footer .column-heading {
+        font-size: 1.8rem;
+    }
+    #footer footer ul li a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Mobile-specific touch improvements */
+
+@media only screen and (max-width: 768px) {
+    /* Increase tap targets for mobile */
+    a,
+    button,
+    .skill,
+    .nav-icon {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    /* Prevent text size adjustment */
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+    /* Improve scrolling behavior */
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    /* Optimize butterfly animation for mobile */
+    .butterflies {
+        display: none;
+        /* Consider removing on mobile for performance */
+    }
+}
+
+.social-links i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
 }
