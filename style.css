@@ -1667,3 +1667,179 @@ p {
     width: 16px;
     text-align: center;
 }
+
+
+/* Experience Section */
+
+#experience {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.certificate-item {
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-img {
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 250px;
+}
+
+.certificate-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.certificate-content {
+    flex: 2;
+}
+
+.certificate-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.certificate-subtitle {
+    font-size: 16px;
+    color: #3f8600;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.certificate-desc {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .certificate-item {
+        flex-direction: column;
+    }
+    .certificate-img {
+        max-width: 100%;
+    }
+}
+
+
+/* Certificate Slider */
+
+.certificate-slider {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 10px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: #3f8600;
+    color: white;
+}
+
+.slider-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.slider-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-indicator.active {
+    background: #3f8600;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .certificate-slider {
+        padding: 0 20px;
+    }
+    .slider-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .certificate-item {
+        flex-direction: column;
+    }
+    .certificate-img {
+        max-width: 100%;
+    }
+}

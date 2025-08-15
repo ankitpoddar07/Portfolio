@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ANKIT - Portfolio</title>
-  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+  <title>Portfolio :</title>
+  <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -121,6 +121,10 @@
             <div class="skills">
               <!-- Row 1 -->
               <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/128/4785/4785958.png" alt="C C++ Icon">
+                <p>C / C++</p>
+              </div>
+              <div class="skill">
                 <i class="fa-brands fa-python"></i>
                 <p>Python</p>
               </div>
@@ -210,6 +214,106 @@
       </div>
     </section>
 
+    <!-- Experience/Certifications Section with Slider -->
+      <section id="experience">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-heading" data-outline="Experience">Experience & Certifications</h2>
+          
+          <div class="certificate-slider">
+            <!-- Slider Controls -->
+            <button class="slider-btn prev-btn" aria-label="Previous certificate">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            
+            <div class="slider-container">
+              <!-- Certificate 1 -->
+              <div class="slider-item">
+                <div class="certificate-item">
+                  <div class="certificate-img">
+                    <img src="/certificate/python.png" alt="Python Internship Certificate">
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">Python Development Intern</h3>
+                    <p class="certificate-subtitle">Deloitte Australia Technology Job Simulation on Forage - July 2025 | • Remote</p>
+                    <p class="certificate-desc">
+                      <i class="fa-brands fa-python"></i> Completed a job simulation involving Python development and coding tasks. <br> <i class="fa-solid fa-chart-line"></i> wrote a proposal for creating a dashboard.
+                    </p>
+                    <a href="/certificate/python.pdf" class="primary-btn outline" download>View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certificate 2 -->
+              <div class="slider-item">
+                <div class="certificate-item">
+                  <div class="certificate-img">
+                    <img src="/certificate/em.png" alt="Web Development Certificate">
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">Email Marketing Internship</h3>
+                    <p class="certificate-subtitle">Bharat Gears Limited | • Remote</p>
+                    <p class="certificate-desc">
+                      <i class="fa-solid fa-envelope"></i> Gained hands-on experience in planning and executing email marketing campaigns. <br>
+                      <i class="fa-solid fa-pen"></i> Created engaging email content. <br>
+                      <i class="fa-solid fa-chart-line"></i> Analyzed campaign performance to optimize engagement.
+                    </p>
+                    <a href="/certificate/email.pdf" class="primary-btn outline" download>View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certificate 3 -->
+              <div class="slider-item">
+                <div class="certificate-item">
+                  <div class="certificate-img">
+                    <img src="/certificate/da.png" alt="Data Science Certificate">
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">Data Analytics Intern</h3>
+                    <p class="certificate-subtitle">Deloitte Australia Data Analytics Job Simulation on Forage - July 2025 | • Remote</p>
+                    <p class="certificate-desc">
+                       🕵️‍♂️ : Completed a Deloitte job simulation involving data analysis and forensic technology. <br>
+                       📊 : Created a data dashboard using Tableau and used Excel to classify data and draw business conclusions.
+                    </p>
+                    <a href="/certificate/data-analytics intership.pdf" class="primary-btn outline" download>View Certificate</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certificate 4 -->
+              <div class="slider-item">
+                <div class="certificate-item">
+                  <div class="certificate-img">
+                    <img src="/certificate/cdtpython.png" alt="Cloud Computing Certificate">
+                  </div>
+                  <div class="certificate-content">
+                    <h3 class="certificate-title">Python Programming</h3>
+                    <p class="certificate-subtitle">CODTECH IT SOLUTIONS | • Remote</p>
+                    <p class="certificate-desc">
+                      📊 : Developed a Streamlit application for interactive data analysis and visualization. <br>
+                      ⚙️ : Implemented advanced filtering and dynamic chart generation. <br>
+                      📄 : Automated PDF report generation for streamlined data sharing.
+                    </p>
+                    <a href="/certificate/codtech python.pdf" class="primary-btn outline" download>View Certificate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="slider-btn next-btn" aria-label="Next certificate">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Slider Indicators -->
+          <div class="slider-indicators"></div>
+        </div>
+      </section>
+
   <!-- services Section -->
   <section id="services">
     <div class="container" data-aos="fade-right" data-aos-duration="100" data-aos-delay="10">
@@ -230,12 +334,11 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
-          <h3 class="item-heading">UI/UX</h3>
-          <p class="item-desc">I do ui/ux design for the website that assists website to get an outstanding look. Unique
-            design creates an unique personality for websites. (Django, Flask, FastAPI, HTML, CSS, Javascripts)</p>
+          <h3 class="item-heading">Data Analysis</h3>
+          <p class="item-desc">Turning raw data into actionable insights with Python, SQL, and powerful visualization tools. I uncover trends that drive smarter business decisions.</p>
         </div>
         <div class="item">
           <div class="icon">
@@ -251,7 +354,7 @@
     </div>
   </section>
   <!-- Testimonial Section -->
-  <!--<section id="testimonial">
+  <section id="testimonial">
     <div class="container">
       <h1 class="section-heading" data-outline="Testimonial">Testimonial</h1>
       <div class="all-items">
@@ -259,55 +362,50 @@
           <div class="img">
             <img src="./image/sayed.jpg" alt="">
           </div>
-          <h3 class="testimonial-heading">Mr. Sayed</h3>
-          <p class="testimonial-sub-heading">CTO, TechG</p>
+          <h3 class="testimonial-heading">Mr. Vijay</h3>
+          <p class="testimonial-sub-heading">Jena Watches, ODISHA</p>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
             </svg>
           </div>
-          <p class="testimonial-desc">AMY conveys quality work. She is an excellent individual and an extraordinary
-            cooperative person. She is extremely
-            straightforward and puts all her energy to follow through on schedule. </p>
+          <p class="testimonial-desc">"Ankit delivers exceptional quality work. His professionalism and collaborative spirit stand out in every project. What impresses me most is transparency and dedication to meeting deadlines without compromising quality." </p>
         </div>
         <div class="item">
           <div class="img">
             <img src="./image/arfan.jpg" alt="">
           </div>
-          <h3 class="testimonial-heading">Shaif Arfan</h3>
-          <p class="testimonial-sub-heading">CEO, WEBc.</p>
+          <h3 class="testimonial-heading">Rahul Sharma</h3>
+          <p class="testimonial-sub-heading">Retail Analytics</p>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
             </svg>
           </div>
-          <p class="testimonial-desc">I've worked with many individuals who are tendentious and driven by things other
-            than the work they're doing. AMY is genuinely energetic about the web and the items she makes for it and
-            that is
-            quite darn
-            marvelous.</p>
+          <p class="testimonial-desc">"In India's complex retail landscape, Ankit's data insights have been transformative. 
+            His analysis of our pan-India sales patterns helped optimize our inventory 
+            and boosted profitability by 20%."</p>
         </div>
         <div class="item">
           <div class="img">
             <img src="./image/ayan.jpg" alt="">
           </div>
-          <h3 class="testimonial-heading">Ayan Khan</h3>
-          <p class="testimonial-sub-heading">Singer</p>
+          <h3 class="testimonial-heading">Amarjit</h3>
+          <p class="testimonial-sub-heading">Arogya Medicals, BIHAR</p>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
             </svg>
           </div>
-          <p class="testimonial-desc">AMY is a wonderfully creative, collaborative, and gifted developer who excels at
-            creating inclusive digital solutions.
+          <p class="testimonial-desc">"Ankit designed our pharmacy website with great attention to our needs. He created an easy-to-use platform where customers can browse medicines, upload prescriptions, and etc.. The website runs smoothly."
           </p>
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
   <!-- stats Section -->
   <section id="stats">
     <div class="container" data-aos="fade-left" data-aos-duration="100" data-aos-delay="100">
@@ -414,7 +512,7 @@
     <div class="container">
       <footer>
         <div class="col-1">
-          <div class="logo"><a href="./index.html#home">
+          <div class="logo"><a href="index.html">
               <img src="./image/light-logo.svg" alt="">
             </a></div>
             <p>A Python developer specializing in backend development and web applications. I build scalable and high-performance applications using Django, Flask, and modern database technologies.</p>
@@ -431,7 +529,7 @@
         <div class="col-3">
           <h2 class="column-heading">Contact<br>Info</h2>
           <ul>
-            <li><a href="mailto:ankitkumarpoddar07@gmail.com">ankitkumarpoddar07@gmail.com</a></li>
+            <li><a href="mailto:ankitkumarpoddar07@gmail.com">ankitkumarpoddar77@gmail.com</a></li>
             <li><a href="tel:+918409755322">+91 8409755322</a></li>
             <li><a href="https://www.google.com/maps/search/New+Delhi,+INDIA" target="_blank">New Delhi, INDIA</a></li>
           </ul>
